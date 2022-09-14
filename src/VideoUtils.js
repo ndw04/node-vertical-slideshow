@@ -9,15 +9,6 @@ class VideoUtils {
             outputFile.toString()
         ], { stdio: 'pipe' });
     }
-
-    static streamFrame({ stream, frameBuffer }) {
-        stream.write(frameBuffer);
-        
-    }
-
-    static streamEnd({ stream }) {
-        stream.end();
-    }
 }
 
 module.exports = VideoUtils;
